@@ -1,11 +1,11 @@
-package main.java.com.algorithm.level1;
+package main.java.com.algorithm;
 
 /**
  * @author Lazarchuk
  * @version 1.0
  * @date 15/09/2015
- * *****************************************
- * The implements level-1 'Linear Algorithm'
+ * *****************************************************
+ * The implements levels #1 / #2 / #3 'Linear Algorithm'
  */
 public class LinearAlgorithm {
 
@@ -52,9 +52,9 @@ public class LinearAlgorithm {
 
         /* Task: Version #1 & Level #2 (2) */
         version1      = new LinearAlgorithm(0.078,0.5);
-        double level2_2 = version1.level2_1();
+        double level2_2 = version1.level2_y();
         System.out.println("\nInput data:"+"\n\tx = "+version1.x+"\n\ty = "+version1.y+"\n\ta = "+version1.a+"\n\tb = "+version1.b+"\n\tz = "+version1.z);
-        System.out.println("Output data (Level #1 (1)):" + "\n\tlevel1 = " + level2_1);
+        System.out.println("Output data (Level #1 (1)):" + "\n\tlevel1 = " + level2_y);
     }
 
     /**
