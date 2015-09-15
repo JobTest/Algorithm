@@ -1,4 +1,4 @@
 
 Программирование линейных алгоритмов
 ====================================
-* `Лабораторная работа`: [http://vunivere.ru/work1339](http://vunivere.ru/work1339)
+* `Вариант #2`: [http://vunivere.ru/work1339](http://vunivere.ru/work1339)
