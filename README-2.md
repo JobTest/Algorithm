@@ -61,7 +61,7 @@
 
 
 * `/usr/lib/jvm/jdk1.7.0_25/bin/javap -c LinearAlgorithm.class`
-* `-c $OutputPath$\$FileDirRelativeToSourcepath$\$FileNameWithoutExtension$.class`
+* `/usr/lib/jvm/jdk1.7.0_25/bin/javap`  `-c $OutputPath$\$FileDirRelativeToSourcepath$\$FileNameWithoutExtension$.class` | `-c $OutputPath$/$FileDirRelativeToSourcepath$/$FileNameWithoutExtension$.class`
 * `Bytecode`: [What’s Cool In IntelliJIDEA. Part III: External Tools](http://arhipov.blogspot.com/2011/08/whats-cool-in-intellijidea-part-iii.html)
 * [http://www.javalobby.org/java/forums/t103827.html](http://www.javalobby.org/java/forums/t103827.html)
 * [http://cafebabe.sourceforge.net/](http://cafebabe.sourceforge.net/)
