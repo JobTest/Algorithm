@@ -115,11 +115,12 @@ public class LinearAlgorithmTest {
     @Test
     public void testLevel3() {
         double a=1.048;
+        double b=2.718;
         double d=1.57;
         double expected1=1.059;
-        double expected2=1.001;
+        double expected2=3.0;
 
-        double[] level3 = algorithm.level3(a,d);
+        double[] level3 = algorithm.level3(a,b,d);
         assertEquals("Here is test-1:",expected1,level3[0],0.001);
         assertEquals("Here is test-2:",expected2,level3[1],0.001);
     }

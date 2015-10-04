@@ -34,7 +34,7 @@ public abstract class Algorithm {
      * @param d
      * @return
      */
-    protected abstract double[] level3(final double a, final double d);
+    protected abstract double[] level3(final double a, final double b, final double d);
 
     public final double getDescriminator(double a, double b, double c){
         return Math.pow(b,2)-4*a*c;
