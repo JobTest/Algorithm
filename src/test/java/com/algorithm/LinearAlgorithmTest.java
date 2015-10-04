@@ -11,7 +11,7 @@ public class LinearAlgorithmTest {
 
     @Before
     public void setUp() {
-        linearAlgorithm = new LinearAlgorithm();
+        algorithm = new LinearAlgorithm();
     }
 
     /**
@@ -26,7 +26,7 @@ public class LinearAlgorithmTest {
         String expected="Illegal Argument: a==0";
 
         try {
-            linearAlgorithm.level1(a,b,c,d);
+            algorithm.level1(a,b,c,d);
             fail();
         } catch (IllegalArgumentException e){
             assertEquals("Here is test Illegal Argument:",expected,e.getMessage());
@@ -45,7 +45,7 @@ public class LinearAlgorithmTest {
         String expected="Descriminator < 0";
 
         try {
-            linearAlgorithm.level1(a,b,c,d);
+            algorithm.level1(a,b,c,d);
             fail();
         } catch (RuntimeException e){
             assertEquals("Here is test descriminator Exception:",expected,e.getMessage());
@@ -65,7 +65,7 @@ public class LinearAlgorithmTest {
         double expectedY2=-0.697;
 
         try {
-            double[] level1 = linearAlgorithm.level1(a,b,c,d);
+            double[] level1 = algorithm.level1(a,b,c,d);
             assertEquals("Here is test Y1:",expectedY1,level1[0],0.001);
             assertEquals("Here is test Y2:",expectedY2,level1[1],0.001);
         } catch (IllegalArgumentException e){
@@ -85,7 +85,7 @@ public class LinearAlgorithmTest {
         String expected="Illegal Argument: b<=0";
 
         try {
-            linearAlgorithm.level2(a, b);
+            algorithm.level2(a, b);
             fail();
         } catch (IllegalArgumentException e){
             assertEquals("Here is test Illegal Argument:",expected,e.getMessage());
@@ -102,7 +102,7 @@ public class LinearAlgorithmTest {
         double expected=1.016;
 
         try {
-            double level2 = linearAlgorithm.level2(a,b);
+            double level2 = algorithm.level2(a,b);
             assertEquals("Here is test:",expected,level2,0.001);
         } catch (IllegalArgumentException e){
             System.err.println(e.getMessage());
@@ -119,10 +119,10 @@ public class LinearAlgorithmTest {
         double expected1=1.059;
         double expected2=1.001;
 
-        double[] level3 = linearAlgorithm.level3(a,d);
+        double[] level3 = algorithm.level3(a,d);
         assertEquals("Here is test-1:",expected1,level3[0],0.001);
         assertEquals("Here is test-2:",expected2,level3[1],0.001);
     }
 
-    private Algorithm linearAlgorithm;
+    private Algorithm algorithm;
 }
