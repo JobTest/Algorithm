@@ -36,11 +36,11 @@ public abstract class Algorithm {
      */
     protected abstract double[] level3(final double a, final double d);
 
-    public final double getDescriminator(final double a, final double b, final double c){
+    public final double getDescriminator(double a, double b, double c){
         return Math.pow(b,2)-4*a*c;
     }
 
-    public final double getX1(final double a, final double b, final double descriminator) throws IllegalArgumentException {
+    public final double getX1(double a, double b, double descriminator) throws IllegalArgumentException {
         if (a==0)
             throw new IllegalArgumentException("Illegal Argument: a==0");
         if (descriminator<0)
@@ -48,7 +48,7 @@ public abstract class Algorithm {
         return (-b+Math.sqrt(descriminator))/(2*a);
     }
 
-    public final double getX2(final double a, final double b, final double descriminator) throws IllegalArgumentException {
+    public final double getX2(double a, double b, double descriminator) throws IllegalArgumentException {
         if (a==0)
             throw new IllegalArgumentException("Illegal Argument: a==0");
         if (descriminator<0)

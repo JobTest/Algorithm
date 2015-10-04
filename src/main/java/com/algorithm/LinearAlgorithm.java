@@ -9,7 +9,7 @@ package com.algorithm;
 public class LinearAlgorithm extends Algorithm {
 
     @Override
-    public double[] level1(final double a, final double b, final double c, final double d) throws IllegalArgumentException {
+    public synchronized double[] level1(final double a, final double b, final double c, final double d) throws IllegalArgumentException {
         double x1 = getX1(a,b,getDescriminator(a,b,c));
         double x2 = getX2(a,b,getDescriminator(a,b,c));
 
@@ -22,14 +22,14 @@ public class LinearAlgorithm extends Algorithm {
     }
 
     @Override
-    public double level2(final double a, final double b) throws IllegalArgumentException {
+    public synchronized double level2(final double a, final double b) throws IllegalArgumentException {
         if (b<=0)
             throw new IllegalArgumentException("Illegal Argument: b<=0");
         return (Math.sin(a)/Math.sqrt(b))-(2*Math.tan(a)-2);
     }
 
     @Override
-    public double[] level3(final double a, final double d) {
+    public synchronized double[] level3(final double a, final double d) {
         double[] level3 = {3.18/(4*Math.pow(Math.sin(a),2)),2*Math.cos(d)+1};
         return level3;
     }
