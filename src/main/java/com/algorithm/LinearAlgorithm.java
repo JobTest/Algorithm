@@ -30,7 +30,7 @@ public class LinearAlgorithm extends Algorithm {
 
     @Override
     public synchronized double[] level3(final double a, final double b, final double d) {
-        double[] level3 = {3.18/(4*Math.pow(Math.sin(a),2)),  Math.cos(d)*Math.log10(b)+3 };
+        double[] level3 = {3.18/(4*Math.pow(Math.sin(a),2)),Math.cos(d)*Math.log10(b)+3};
         return level3;
     }
 
