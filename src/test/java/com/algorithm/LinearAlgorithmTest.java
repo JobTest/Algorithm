@@ -66,8 +66,8 @@ public class LinearAlgorithmTest {
 
         try {
             double[] level1 = algorithm.level1(a,b,c,d);
-            assertEquals("Here is test Y1:",expectedY1,level1[0],0.001);
-            assertEquals("Here is test Y2:",expectedY2,level1[1],0.001);
+            assertEquals("Here is test X1:",expectedY1,level1[0],0.001);
+            assertEquals("Here is test X2:",expectedY2,level1[1],0.001);
         } catch (IllegalArgumentException e){
             System.err.println(e.getMessage());
         } catch (RuntimeException e){
